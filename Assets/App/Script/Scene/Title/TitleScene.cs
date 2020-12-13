@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class TitleScene : SceneBase
 {
-    // Start is called before the first frame update
-    void Start()
+    public void ActionBtnStart()
     {
-
+        MoveScene(SceneConst.SCENE.GAME);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ActionBtnScore()
     {
-
+        MoveScene(SceneConst.SCENE.MEMORY);
     }
 }
