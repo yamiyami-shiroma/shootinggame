@@ -13,7 +13,7 @@ public class StageManager : SingletonMonoBehaviour<StageManager>
         var enemyPrefab = Resources.Load<GameObject>(enemyName);
         if (enemyPrefab != null)
         {
-            var enemy = Instantiate(enemyPrefab, Vector2.zero, Quaternion.identity, transform).GetComponent<EnemyBase>();
+            var enemy = Instantiate(enemyPrefab, Vector2.zero, Quaternion.identity, transform).GetComponent<CharacterBase>();
             if (enemy != null)
             {
                 enemy.SetUp(bulletFiles, moveFiles, pos);

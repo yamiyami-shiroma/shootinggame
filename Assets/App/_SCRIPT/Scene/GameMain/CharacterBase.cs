@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class EnemyBase : MonoBehaviour
+public class CharacterBase : MonoBehaviour
 {
     [SerializeField]
     private List<string> enemyBulletPatternFileNames;
@@ -11,10 +11,11 @@ public class EnemyBase : MonoBehaviour
     protected List<string> enemyMovePatternFileNames;
     [SerializeField]
     private bool isTest = false;
+
     [SerializeField]
     private uint aliveFrame = 1000;
-    private List<EnemyMovePatternData> movePattern;
-    private List<BulletMovePatternData> bulletPattern;
+    protected List<EnemyMovePatternData> movePattern;
+    protected List<BulletMovePatternData> bulletPattern;
     private int currentBulletNo = 0;
     private int bulletCountFrame = 0;
     private uint countMoveFrame = 0;
@@ -23,9 +24,9 @@ public class EnemyBase : MonoBehaviour
     private int nowMovePattern = 0;
     protected Vector2 position;
 
-    private bool isInit = false;
+    protected bool isInit = false;
     private RectTransform rectTransform;
-    private RectTransform rect
+    protected RectTransform rect
     {
         get
         {
@@ -79,17 +80,27 @@ public class EnemyBase : MonoBehaviour
 
     private void Update()
     {
+        characterUpdate();
+    }
+
+    public void characterUpdate()
+    {
         time += Time.deltaTime;
         if (isInit)
         {
             this.countFrame++;
             MoveUpdate();
             BulletUpdate();
-            if (aliveFrame < this.countFrame)
+            if (IsAliveFrame())
             {
                 Die();
             }
         }
+    }
+
+    protected virtual bool IsAliveFrame()
+    {
+        return this.aliveFrame < this.countFrame;
     }
 
     private float time = 0;
