@@ -51,14 +51,20 @@ public class EnemyMovePatternData : ScriptableObject
     public Vector2 ResetPosition { get { return this.resetPosition; } }
     [SerializeField]
     private List<EnemyMoveData> moveDataList;
+    [SerializeField]
+    private bool isLoop = false;
     public EnemyMoveData Get(int index)
     {
+        if (moveDataList.Count <= index)
+        {
+            return null;
+        }
         return moveDataList[index];
     }
     public void Index(ref int index)
     {
         index = index + 1;
-        if (moveDataList.Count <= index)
+        if (moveDataList.Count <= index && this.isLoop)
         {
             index = 0;
         }

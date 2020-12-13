@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19ccd895eef5144528a85f0565d3e060, type: 3}
+  m_Name: Stage-001
+  m_EditorClassIdentifier: 
+  StageScripts:
+  - ScriptCommand: 1
+    ScriptParameters:
+    - value:
+      - 30
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value: []
+    - value:
+      - EnemyMovePattern002
+    - value:
+      - 200
+      - 700
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value: []
+    - value:
+      - EnemyMovePattern002
+    - value:
+      - -200
+      - 700
+  - ScriptCommand: 1
+    ScriptParameters:
+    - value:
+      - 10
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value: []
+    - value:
+      - EnemyMovePattern002
+    - value:
+      - -200
+      - 700
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value: []
+    - value:
+      - EnemyMovePattern002
+    - value:
+      - 200
+      - 700
+  - ScriptCommand: 1
+    ScriptParameters:
+    - value:
+      - 10
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value: []
+    - value:
+      - EnemyMovePattern002
+    - value:
+      - 200
+      - 700
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value: []
+    - value:
+      - EnemyMovePattern002
+    - value:
+      - -200
+      - 700
+  - ScriptCommand: 1
+    ScriptParameters:
+    - value:
+      - 10
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value: []
+    - value:
+      - EnemyMovePattern002
+    - value:
+      - -200
+      - 700
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value: []
+    - value:
+      - EnemyMovePattern002
+    - value:
+      - 200
+      - 700
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value: []
+    - value:
+      - EnemyMovePattern002
+    - value:
+      - 200
+      - 700
+  - ScriptCommand: 1
+    ScriptParameters:
+    - value:
+      - 60
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value: []
+    - value:
+      - EnemyMovePattern003
+    - value:
+      - -50
+      - 700
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value: []
+    - value:
+      - EnemyMovePattern004
+    - value:
+      - 50
+      - 700

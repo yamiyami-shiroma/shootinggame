@@ -6,6 +6,8 @@ public class BoostMgr : SingletonMonoBehaviour<BoostMgr>
 {
     protected override void Awake()
     {
+        // フレームレート30固定
+        Application.targetFrameRate = 30;
         if (SceneMgr.Instance == null)
         {
             GameObject obj = new GameObject();
@@ -13,5 +15,7 @@ public class BoostMgr : SingletonMonoBehaviour<BoostMgr>
             obj.name = "SceneMgr";
         }
         SceneMgr.Instance.Initilize();
+        BulletManager.Instance.Initilize();
+        StageManager.Instance.Initilize();
     }
 }

@@ -53,7 +53,7 @@ public class CharacterBase : MonoBehaviour
         }
     }
 
-    public virtual void SetUp(List<string> bulletNames, List<string> moveNames, Vector3 pos)
+    public virtual void SetUp(List<string> bulletNames, List<string> moveNames, Vector2 pos)
     {
         rect.anchoredPosition = pos;
         movePattern = new List<EnemyMovePatternData>();
@@ -106,7 +106,6 @@ public class CharacterBase : MonoBehaviour
     private float time = 0;
     protected void Die()
     {
-        Debug.LogWarning(time.ToString());
         Destroy(gameObject);
     }
 
@@ -114,6 +113,10 @@ public class CharacterBase : MonoBehaviour
     {
         this.countMoveFrame++;
         var moveData = this.movePattern[nowMovePattern].Get(nowMoveIndex);
+        if (moveData == null)
+        {
+            return;
+        }
         if (moveData.IsMove(this.countMoveFrame))
         {
             rect.anchoredPosition = position + moveData.GetMovePosition(this.countMoveFrame);

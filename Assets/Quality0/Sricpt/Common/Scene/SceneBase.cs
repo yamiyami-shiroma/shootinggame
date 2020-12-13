@@ -17,6 +17,16 @@ public class SceneBase : MonoBehaviour
     public virtual IEnumerator DoInitialize()
     {
         yield return null;
+        StartCoroutine(UpdateStart());
+    }
+
+    protected IEnumerator UpdateStart()
+    {
+        while (true)
+        {
+            yield return null;
+            SceneUpdate();
+        }
     }
 
     protected virtual void SceneUpdate()

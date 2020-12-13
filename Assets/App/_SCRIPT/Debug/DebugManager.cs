@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class DebugManager : SingletonMonoBehaviour<DebugManager>
 {
-    private readonly string EnemyResourcePath = "Enemy/Enemy{0:D3}";
+    private readonly string EnemyResourcePath = "Enemy{0:D3}";
     private readonly string MovePatternName = "EnemyMovePattern{0:D3}";
     private readonly string BulletPatterName = "BulletPatternData{0:D3}";
     [SerializeField]
@@ -31,7 +31,7 @@ public class DebugManager : SingletonMonoBehaviour<DebugManager>
         int.TryParse(bulletPatternIdInputField.text, out bulletId);
         float.TryParse(posXInputField.text, out x);
         float.TryParse(posYInputField.text, out y);
-        Vector3 pos = new Vector3(x, y, 0);
+        Vector2 pos = new Vector2(x, y);
         string bulletName = string.Format(BulletPatterName, bulletId);
         string enemyName = string.Format(EnemyResourcePath, enemyId);
         string moveName = string.Format(MovePatternName, moveId);

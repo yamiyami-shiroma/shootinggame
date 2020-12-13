@@ -7,17 +7,16 @@ public class PlayerCtrl : CharacterBase
     public Vector2 downPosition;
     private void Awake()
     {
-        SetUp(new List<string>() { "BulletPatternData002" }, null, new Vector3(0, -450, 0));
+        SetUp(new List<string>() { "BulletPatternData002" }, null, new Vector3(0, -450));
     }
 
-    public override void SetUp(List<string> bulletNames, List<string> moveNames, Vector3 pos)
+    public override void SetUp(List<string> bulletNames, List<string> moveNames, Vector2 pos)
     {
         bulletPattern = new List<BulletMovePatternData>();
         for (int i = 0; i < bulletNames.Count; i++)
         {
             var path = "Bullet/" + bulletNames[i];
             var pattern = Resources.Load<BulletMovePatternData>("Bullet/" + bulletNames[i]);
-            Debug.LogWarning("Load :" + path);
             bulletPattern.Add(pattern);
         }
         position = pos;

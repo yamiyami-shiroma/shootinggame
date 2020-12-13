@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5253c66d08a894e11b56a8eb5aaa76d1, type: 3}
-  m_Name: EnemyMovePattern002
+  m_Name: EnemyMovePattern004
   m_EditorClassIdentifier: 
   comment: 
   startPosition: {x: 0, y: 0}
@@ -64,5 +64,65 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 0
-    targetPosition: {x: 0, y: -1500}
-    moveFrame: 150
+    targetPosition: {x: 0, y: -550}
+    moveFrame: 60
+  - xMoveCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    yMoveCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0.12043356
+        outSlope: 0.12043356
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.19583334
+      - serializedVersion: 3
+        time: 0.7469037
+        value: 0.21667045
+        inSlope: 0.5657283
+        outSlope: 0.5657283
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.17253093
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 3.4165387
+        outSlope: 3.4165387
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.12252349
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    targetPosition: {x: -400, y: -100}
+    moveFrame: 60
+  isLoop: 0
