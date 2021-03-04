@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: StageBgBlue
-  m_Shader: {fileID: 4800000, guid: 4efa1d62ff818421883532d0bffd76c2, type: 3}
+  m_Shader: {fileID: 4800000, guid: 514fa7c9a4ee24834bd6290a35b910e1, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -58,6 +58,7 @@ Material:
     m_Floats:
     - _Brightness: 0.55
     - _BumpScale: 1
+    - _ColorMask: 15
     - _Contrast: 0.2
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -65,7 +66,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Hue: 0.6
+    - _Hue: 0.212
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -74,7 +75,13 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
     - _UVSec: 0
+    - _UseUIAlphaClip: 0
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}

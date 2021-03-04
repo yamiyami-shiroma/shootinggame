@@ -45,7 +45,7 @@ MonoBehaviour:
     frame: 10
     bulletType: 0
     destroyDelay: 45
-    comment: 
+    comment: "\u6575\u76F4\u7DDA01"
   - id: 2
     position: {x: 0, y: -30}
     vectol: {x: 0, y: 1, z: 0}
@@ -78,7 +78,7 @@ MonoBehaviour:
     frame: 90
     bulletType: 0
     destroyDelay: 0
-    comment: 
+    comment: "\u6575\u76F4\u7DDA02"
   - id: 3
     position: {x: 0, y: -30}
     vectol: {x: 0.2, y: 1, z: 0}
@@ -111,7 +111,7 @@ MonoBehaviour:
     frame: 90
     bulletType: 0
     destroyDelay: 0
-    comment: 
+    comment: "\u6575\u53F3\u659C\u308101"
   - id: 4
     position: {x: 0, y: -30}
     vectol: {x: -0.2, y: 1, z: 0}
@@ -144,7 +144,7 @@ MonoBehaviour:
     frame: 90
     bulletType: 0
     destroyDelay: 0
-    comment: 
+    comment: "\u6575\u5DE6\u659C\u308101"
   - id: 5
     position: {x: 0, y: 60}
     vectol: {x: 0, y: -1, z: 0}
@@ -178,3 +178,102 @@ MonoBehaviour:
     bulletType: 0
     destroyDelay: 0
     comment: "\u81EA\u6A5F\u752801"
+  - id: 6
+    position: {x: 0, y: -30}
+    vectol: {x: 0, y: 0, z: 0}
+    rotation: 0
+    baseSpeed: 0
+    speedRate:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    frame: 0
+    bulletType: 0
+    destroyDelay: 0
+    comment: "\u5207\u66FF\u752801"
+  - id: 7
+    position: {x: 0, y: -30}
+    vectol: {x: 0.4, y: 1, z: 0}
+    rotation: 0
+    baseSpeed: 20
+    speedRate:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    frame: 90
+    bulletType: 0
+    destroyDelay: 0
+    comment: "\u6575\u53F3\u659C\u308102"
+  - id: 8
+    position: {x: 0, y: -30}
+    vectol: {x: -0.4, y: 1, z: 0}
+    rotation: 0
+    baseSpeed: 20
+    speedRate:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    frame: 90
+    bulletType: 0
+    destroyDelay: 0
+    comment: "\u6575\u5DE6\u659C\u308102"

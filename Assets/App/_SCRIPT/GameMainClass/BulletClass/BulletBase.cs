@@ -66,7 +66,7 @@ public class BulletBase : MonoBehaviour
         }
         if (countFrame >= frame + delay)
         {
-            DestroyBullet();
+            DestroyBullet(false);
         }
         countFrame++;
     }
@@ -85,14 +85,20 @@ public class BulletBase : MonoBehaviour
 
     }
 
-    protected void DestroyBullet()
+    public virtual void DestroyBullet(bool isHit)
     {
+        if (isHit)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         if (isDestroy == false)
         {
             isDestroy = true;
             for (int i = 0; i < this.next.Count; i++)
             {
-                BulletManager.Instance.CreateToBullet(this.next[i], rect);
+                BulletManager.Instance.CreateToBullet(this.next[i], rect, gameObject.name);
             }
         }
         if (this.countFrame >= this.destroyDelay)

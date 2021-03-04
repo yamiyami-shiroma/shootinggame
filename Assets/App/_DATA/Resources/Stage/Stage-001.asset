@@ -16,7 +16,7 @@ MonoBehaviour:
   - ScriptCommand: 1
     ScriptParameters:
     - value:
-      - 30
+      - 90
   - ScriptCommand: 2
     ScriptParameters:
     - value:
@@ -131,7 +131,7 @@ MonoBehaviour:
     - value:
       - EnemyMovePattern003
     - value:
-      - -50
+      - -150
       - 700
   - ScriptCommand: 2
     ScriptParameters:
@@ -141,5 +141,524 @@ MonoBehaviour:
     - value:
       - EnemyMovePattern004
     - value:
-      - 50
+      - 150
       - 700
+  - ScriptCommand: 1
+    ScriptParameters:
+    - value:
+      - 20
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value: []
+    - value:
+      - EnemyMovePattern003
+    - value:
+      - -150
+      - 700
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value: []
+    - value:
+      - EnemyMovePattern004
+    - value:
+      - 150
+      - 700
+  - ScriptCommand: 1
+    ScriptParameters:
+    - value:
+      - 20
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value: []
+    - value:
+      - EnemyMovePattern003
+    - value:
+      - -150
+      - 700
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value: []
+    - value:
+      - EnemyMovePattern004
+    - value:
+      - 150
+      - 700
+  - ScriptCommand: 1
+    ScriptParameters:
+    - value:
+      - 20
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value: []
+    - value:
+      - EnemyMovePattern003
+    - value:
+      - -150
+      - 700
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value: []
+    - value:
+      - EnemyMovePattern004
+    - value:
+      - 150
+      - 700
+  - ScriptCommand: 1
+    ScriptParameters:
+    - value:
+      - 20
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value: []
+    - value:
+      - EnemyMovePattern003
+    - value:
+      - -150
+      - 700
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value: []
+    - value:
+      - EnemyMovePattern004
+    - value:
+      - 150
+      - 700
+  - ScriptCommand: 1
+    ScriptParameters:
+    - value:
+      - 40
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy003
+    - value:
+      - BulletPatternData003
+    - value:
+      - EnemyMovePattern006
+    - value:
+      - 200
+      - 700
+  - ScriptCommand: 1
+    ScriptParameters:
+    - value:
+      - 20
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy003
+    - value:
+      - BulletPatternData003
+    - value:
+      - EnemyMovePattern005
+    - value:
+      - 150
+      - 750
+  - ScriptCommand: 1
+    ScriptParameters:
+    - value:
+      - 20
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy003
+    - value:
+      - BulletPatternData003
+    - value:
+      - EnemyMovePattern006
+    - value:
+      - 0
+      - 700
+  - ScriptCommand: 1
+    ScriptParameters:
+    - value:
+      - 20
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy003
+    - value:
+      - BulletPatternData003
+    - value:
+      - EnemyMovePattern006
+    - value:
+      - 100
+      - 700
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy003
+    - value:
+      - BulletPatternData003
+    - value:
+      - EnemyMovePattern005
+    - value:
+      - -100
+      - 750
+  - ScriptCommand: 1
+    ScriptParameters:
+    - value:
+      - 20
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy003
+    - value:
+      - BulletPatternData003
+    - value:
+      - EnemyMovePattern005
+    - value:
+      - -200
+      - 750
+  - ScriptCommand: 1
+    ScriptParameters:
+    - value:
+      - 60
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value:
+      - BulletPatternData004
+    - value:
+      - EnemyMovePattern007
+    - value:
+      - -400
+      - 200
+    - value:
+      - 150
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value:
+      - BulletPatternData004
+    - value:
+      - EnemyMovePattern007
+    - value:
+      - -480
+      - 200
+    - value:
+      - 150
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value:
+      - BulletPatternData004
+    - value:
+      - EnemyMovePattern007
+    - value:
+      - -560
+      - 200
+    - value:
+      - 150
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value:
+      - BulletPatternData004
+    - value:
+      - EnemyMovePattern007
+    - value:
+      - -620
+      - 200
+    - value:
+      - 150
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value:
+      - BulletPatternData004
+    - value:
+      - EnemyMovePattern007
+    - value:
+      - -700
+      - 200
+    - value:
+      - 150
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value:
+      - BulletPatternData004
+    - value:
+      - EnemyMovePattern007
+    - value:
+      - -780
+      - 200
+    - value:
+      - 150
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value:
+      - BulletPatternData004
+    - value:
+      - EnemyMovePattern007
+    - value:
+      - -400
+      - 100
+    - value:
+      - 150
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value:
+      - BulletPatternData004
+    - value:
+      - EnemyMovePattern007
+    - value:
+      - -480
+      - 100
+    - value:
+      - 150
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value:
+      - BulletPatternData004
+    - value:
+      - EnemyMovePattern007
+    - value:
+      - -560
+      - 100
+    - value:
+      - 150
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value:
+      - BulletPatternData004
+    - value:
+      - EnemyMovePattern007
+    - value:
+      - -620
+      - 100
+    - value:
+      - 150
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value:
+      - BulletPatternData004
+    - value:
+      - EnemyMovePattern007
+    - value:
+      - -700
+      - 100
+    - value:
+      - 150
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value:
+      - BulletPatternData004
+    - value:
+      - EnemyMovePattern007
+    - value:
+      - -780
+      - 100
+    - value:
+      - 150
+  - ScriptCommand: 1
+    ScriptParameters:
+    - value:
+      - 120
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value:
+      - BulletPatternData004
+    - value:
+      - EnemyMovePattern008
+    - value:
+      - 400
+      - 200
+    - value:
+      - 150
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value:
+      - BulletPatternData004
+    - value:
+      - EnemyMovePattern008
+    - value:
+      - 480
+      - 200
+    - value:
+      - 150
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value:
+      - BulletPatternData004
+    - value:
+      - EnemyMovePattern008
+    - value:
+      - 560
+      - 200
+    - value:
+      - 150
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value:
+      - BulletPatternData004
+    - value:
+      - EnemyMovePattern008
+    - value:
+      - 620
+      - 200
+    - value:
+      - 150
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value:
+      - BulletPatternData004
+    - value:
+      - EnemyMovePattern008
+    - value:
+      - 700
+      - 200
+    - value:
+      - 150
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value:
+      - BulletPatternData004
+    - value:
+      - EnemyMovePattern008
+    - value:
+      - 780
+      - 200
+    - value:
+      - 150
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value:
+      - BulletPatternData004
+    - value:
+      - EnemyMovePattern008
+    - value:
+      - 400
+      - 100
+    - value:
+      - 150
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value:
+      - BulletPatternData004
+    - value:
+      - EnemyMovePattern008
+    - value:
+      - 480
+      - 100
+    - value:
+      - 150
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value:
+      - BulletPatternData004
+    - value:
+      - EnemyMovePattern008
+    - value:
+      - 560
+      - 100
+    - value:
+      - 150
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value:
+      - BulletPatternData004
+    - value:
+      - EnemyMovePattern008
+    - value:
+      - 620
+      - 100
+    - value:
+      - 150
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value:
+      - BulletPatternData004
+    - value:
+      - EnemyMovePattern008
+    - value:
+      - 700
+      - 100
+    - value:
+      - 150
+  - ScriptCommand: 2
+    ScriptParameters:
+    - value:
+      - Enemy002
+    - value:
+      - BulletPatternData004
+    - value:
+      - EnemyMovePattern008
+    - value:
+      - 780
+      - 100
+    - value:
+      - 150
+  - ScriptCommand: 1
+    ScriptParameters:
+    - value:
+      - 300
+  - ScriptCommand: 4
+    ScriptParameters:
+    - value:
+      - Enemy001
+    - value:
+      - BulletPatternData001
+    - value:
+      - EnemyMovePattern001
+    - value:
+      - 0
+      - 450
+    - value:
+      - 6000

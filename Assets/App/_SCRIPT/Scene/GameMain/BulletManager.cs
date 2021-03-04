@@ -29,10 +29,11 @@ public class BulletManager : SingletonMonoBehaviour<BulletManager>
         return bullet;
     }
 
-    public void CreateToBullet(BulletObject bulletObj, RectTransform root)
+    public void CreateToBullet(BulletObject bulletObj, RectTransform root, string name)
     {
         var bullet = Instantiate(ObjLoad(bulletObj.ObjId), root.parent, false) as GameObject;
         var rect = bullet.transform as RectTransform;
+        bullet.name = name;
         rect.anchoredPosition = root.anchoredPosition;
         SetPostion(GetBullet(bulletObj.ID), bullet, bulletObj);
     }

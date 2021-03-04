@@ -18,6 +18,7 @@ public class StageScript
         WAIT,
         CREATE_ENEMY,
         SCROLL_START,
+        CREATE_BOSS,
     }
     public SCRIPT_COMMAND ScriptCommand = SCRIPT_COMMAND.NONE;
     public List<ScriptParameter> ScriptParameters = new List<ScriptParameter>();

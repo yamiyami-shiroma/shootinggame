@@ -123,6 +123,6 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 0
-    targetPosition: {x: -400, y: -100}
+    targetPosition: {x: -600, y: -100}
     moveFrame: 60
   isLoop: 0

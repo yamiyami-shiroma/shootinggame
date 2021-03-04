@@ -15,9 +15,9 @@ public class BulletMoveData
     public enum BULLE_TYPE
     {
         STRAIGHT,
-        CURVE,
         HORMING,
-        REFLECT
+        REFLECT,
+        TARGET,
     }
     [SerializeField]
     private uint id = 0;

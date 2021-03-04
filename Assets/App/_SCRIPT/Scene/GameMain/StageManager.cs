@@ -7,21 +7,59 @@ public class StageManager : SingletonMonoBehaviour<StageManager>
 {
     public StageData NowStageData = null;
     private int StageCommandIndex = 0;
+    private List<CharacterBase> CreateCharacterList = new List<CharacterBase>();
+    private PlayerCtrl player = null;
+    private BossEnemy boss = null;
     public override void Initilize()
     {
         base.Initilize();
     }
-    public void CreateEnemy(string enemyName, List<string> bulletFiles, List<string> moveFiles, Vector2 pos)
+    public void CreateEnemy(string enemyName, List<string> bulletFiles, List<string> moveFiles, Vector2 pos, uint alive = 0)
     {
         var enemyPrefab = Resources.Load<GameObject>(string.Format("Enemy/{0}", enemyName));
         if (enemyPrefab != null)
         {
-            var enemy = Instantiate(enemyPrefab, Vector2.zero, Quaternion.identity, transform).GetComponent<CharacterBase>();
+            var enemy = Instantiate(enemyPrefab, transform, false).GetComponent<Enemy>();
             if (enemy != null)
             {
-                enemy.SetUp(bulletFiles, moveFiles, pos);
+                enemy.type = CharacterBase.CHARACTER_TYPE.ENEMY;
+                enemy.SetUp(bulletFiles, moveFiles, pos, alive);
+            }
+            this.CreateCharacterList.Add(enemy);
+        }
+    }
+
+    public void CreateBoss(string enemyName, List<string> bulletFiles, List<string> moveFiles, Vector2 pos, uint alive = 0)
+    {
+        var bossPrefab = Resources.Load<GameObject>(string.Format("Enemy/{0}", enemyName));
+        if (bossPrefab != null)
+        {
+            var boss = Instantiate(bossPrefab, transform, false).GetComponent<BossEnemy>();
+            if (boss != null)
+            {
+                boss.type = CharacterBase.CHARACTER_TYPE.BOSS;
+                boss.SetUp(bulletFiles, moveFiles, pos, alive);
             }
         }
+    }
+
+    public void CreatePlayer(List<string> bulletFiles, Vector2 pos)
+    {
+        var playerPrefab = Resources.Load<GameObject>("Player/Player");
+        if (playerPrefab != null)
+        {
+            this.player = Instantiate(playerPrefab, transform, false).GetComponent<PlayerCtrl>();
+            if (this.player != null)
+            {
+                player.type = CharacterBase.CHARACTER_TYPE.PLAYER;
+                player.SetUp(bulletFiles, null, pos);
+            }
+        }
+    }
+
+    public void RemoveCharacter(CharacterBase character)
+    {
+        this.CreateCharacterList.Remove(character);
     }
 
     public void LoadStageData(string stageName)
@@ -42,16 +80,16 @@ public class StageManager : SingletonMonoBehaviour<StageManager>
 
     private IEnumerator ScriptCommandProcess(StageScript script, UnityAction callback)
     {
-        Debug.LogWarning(script.ScriptCommand + ":" + script.GetParameterValue(0));
+        float x = 0;
+        float y = 0;
+        uint alive = 0;
         switch (script.ScriptCommand)
         {
             case StageScript.SCRIPT_COMMAND.CREATE_ENEMY:
-                float x = 0;
-                float y = 0;
                 float.TryParse(script.GetParameterValue(3, 0), out x);
                 float.TryParse(script.GetParameterValue(3, 1), out y);
-                Vector2 pos = new Vector2(x, y);
-                CreateEnemy(script.GetParameterValue(0), script.GetParamter(1), script.GetParamter(2), pos);
+                uint.TryParse(script.GetParameterValue(4), out alive);
+                CreateEnemy(script.GetParameterValue(0), script.GetParamter(1), script.GetParamter(2), new Vector2(x, y), alive);
                 break;
             case StageScript.SCRIPT_COMMAND.SCROLL_START:
                 break;
@@ -59,6 +97,13 @@ public class StageManager : SingletonMonoBehaviour<StageManager>
                 int waitFrame = 0;
                 int.TryParse(script.GetParameterValue(0), out waitFrame);
                 yield return WaitFrame(waitFrame);
+                break;
+            case StageScript.SCRIPT_COMMAND.CREATE_BOSS:
+
+                float.TryParse(script.GetParameterValue(3, 0), out x);
+                float.TryParse(script.GetParameterValue(3, 1), out y);
+                uint.TryParse(script.GetParameterValue(4), out alive);
+                CreateBoss(script.GetParameterValue(0), script.GetParamter(1), script.GetParamter(2), new Vector2(x, y), alive);
                 break;
         }
         this.StageCommandIndex++;

@@ -19,11 +19,12 @@ public class GameMainScene : SceneBase
         int stageNo = 1;
         string stageFileName = string.Format("Stage-{0:D3}", stageNo);
         StageManager.Instance.LoadStageData("Stage-001");
+        StageManager.Instance.CreatePlayer(new List<string>() { "BulletPatternData002" }, new Vector3(0, -450));
     }
 
-    public override IEnumerator DoInitialize()
+    public override void OnCompleteInitialize()
     {
-        yield return base.DoInitialize();
+        base.OnCompleteInitialize();
         ScriptProcess();
     }
 
